@@ -1,0 +1,16 @@
+.blog_wrap{
+    border: 2px solid black;
+    margin-bottom: 2em;
+    padding: 7px;
+    border-radius: 10px; 
+}
+.blog_body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+
+}
+.blog_time{
+    font-family: 'Caveat', cursive;
+    font-size: 10px;
+}

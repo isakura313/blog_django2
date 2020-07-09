@@ -1,0 +1,16 @@
+{% extends "blog/base.html" %}
+{% block title %} My Blog {% endblock %}
+{% block content %}
+<h1 class="is-size-5 has-text-centered"> Статьи по темам </h1>
+{% for post in posts %}
+<div class="blog_wrap">
+    <h5 class="is-size-5 has-text-centered title"> {{ post.title }}</h5>
+    <p class="blog_body"> {{ post.body|truncatewords:30|linebreaks }}</p>
+    <p class="blog_time"> Опубликовано {{ post.publish }} by {{ post.author }} </p>
+    <a href="{{ post.get_absolute_url }}">  продолжить чтение... </a>
+</div>
+{% endfor %}
+
+
+
+{% endblock %}

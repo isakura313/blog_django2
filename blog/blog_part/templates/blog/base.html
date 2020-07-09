@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> {% block title %} {% endblock %}</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Playfair+Display:wght@500&family=Rubik&display=swap" rel="stylesheet">
+    <link href="{% static "css/blog.css" %}" rel="stylesheet">
+    <link href="{% static "css/bulma.css" %}" rel="stylesheet">
+</head>
+<body>
+<div class="columns is-centered">
+    <div class="column is-half">
+        {% block content %}
+    </div>
+    {% endblock %}
+</div>
+</div>
+
+
+</body>
+</html>

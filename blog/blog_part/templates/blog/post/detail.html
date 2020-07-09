@@ -1,0 +1,11 @@
+{% extends "blog/base.html" %}
+{% block title %} {{ post.title }} {% endblock %}
+{% block content %}
+<h1 class="is-size-5 has-text-centered"> {{ post.title }} </h1>
+<div class="blog_wrap">
+    <h5 class="is-size-5 has-text-centered title"> {{ post.title }}</h5>
+    <p class="blog_body"> {{ post.body|linebreaks }}</p>
+    <p class="blog_time"> Опубликовано {{ post.publish }} by {{ post.author }} </p>
+</div>
+
+{% endblock %}
