@@ -2,8 +2,11 @@
 {% block title %} {{ post.title }} {% endblock %}
 {% block content %}
 <h1 class="is-size-5 has-text-centered"> {{ post.title }} </h1>
-<div class="blog_wrap">
+<div class="blog_wrap ">
     <h5 class="is-size-5 has-text-centered title"> {{ post.title }}</h5>
+
+        <img src="{{ post.blog_Post_Img.url }}" style="height: 200px; margin-left: 18%;" >
+
     <p class="blog_body"> {{ post.body|linebreaks }}</p>
     <p class="blog_time"> Опубликовано {{ post.publish }} by {{ post.author }} </p>
 </div>

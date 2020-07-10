@@ -5,10 +5,16 @@
     <title> {% block title %} {% endblock %}</title>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Playfair+Display:wght@500&family=Rubik&display=swap" rel="stylesheet">
-    <link href="{% static "css/blog.css" %}" rel="stylesheet">
-    <link href="{% static "css/bulma.css" %}" rel="stylesheet">
+    <link href="{% static "blog.css" %}" rel="stylesheet">
+    <link href="{% static "bulma.css" %}" rel="stylesheet">
 </head>
 <body>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+
+  <div class="navbar-menu has-text-primary-light has-background-black">
+      <a href="/admin/" class=navbar-item>Пройти в админку</a>
+  </div>
+</nav>
 <div class="columns is-centered">
     <div class="column is-half">
         {% block content %}
